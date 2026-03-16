@@ -1,0 +1,327 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+    color:white;background-color: black;
+    overflow:hidden;
+}
+
+.main{
+    display:flex;
+    height:100vh
+    
+}
+
+.sidebar{
+   background-color:black;
+   ; width:340px;
+   border-radius:1rem /*16px*/
+}
+.main-content{ 
+    background-color:black;
+    flex:1;
+    border-radius:1rem;
+    overflow:auto;
+    padding:0 1.5rem 0 1.5rem;
+    margin-top:8px
+
+}
+
+.music_player{
+   background-color:black;
+   position:fixed;
+   bottom:0px;
+   width:100%;
+   height:72px;
+   display: flex;
+   align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-option{
+    background-color: #121212;
+    border-radius:1rem;
+    line-height:2.5rem;
+    opacity:0.6;
+    padding:8px;
+     padding:0.5rem 0.75rem;
+}
+
+.nav{
+    border-radius: 1rem;
+    display:flex;
+    flex-direction: column;
+    
+    height:100px;
+    position:relative;
+    top:7px;
+    /* background-color: #121212; */
+}
+
+
+
+.nav-option:hover{
+    background-color: #121212;
+    border-radius:1rem;
+    line-height:2.5rem;
+    opacity: 1;
+
+    ;
+}
+
+.nav-option i{
+    font-size:1.25rem;
+}
+.nav-option a{
+    font-size:1rem;
+    margin-left:15px
+}
+
+.library{
+    position:relative;
+    top:30px;
+    /* background-color: #121212; */
+    height:100%
+}
+
+
+.options{
+    display:flex;
+    justify-content: space-between;
+     padding:0.5rem 0.75rem;
+     background-color: #121212;
+     /* margin-right:15px */
+
+}
+
+
+.icons{
+    font-size:1rem;
+    opacity:0.5
+}
+
+
+
+.icons:hover{
+    opacity:1
+}
+
+
+
+.box{
+    /* background-color: #121212; */
+    border-radius: 1rem;
+    margin:0.25rem 0 0.5rem 0;
+    padding:1rem 1.25rem
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight:500
+}
+
+.box-p2{
+    font-size: 0.75;
+    opacity:0.75;
+
+}
+
+.badge{
+    background-color: white;
+    color:black;
+    border:none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    margin-top:0.5rem;
+    height:2rem;
+
+    
+}
+
+.box{
+    margin:20px
+    ;background-color: #121212;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color: black;
+    display:flex;
+    justify-content:space-between ;
+    z-index: 10
+    ;
+}
+.but-1{
+    background-color: white;
+    color:black;
+    border-radius: 45px;
+    margin-right:10px;
+    font-size:1rem;
+    font-family: sans-serif;
+}
+
+.but-2{
+    background-color: black;
+    color:white;
+    border-radius: 45px;
+    font-size:1rem;
+    font-family: sans-serif;
+    margin-right:15px
+
+}
+
+.sticky-nav img{
+    margin-left:0.5rem
+}
+
+.nav-2{
+    margin-right:20px;
+}
+
+@media(max-width:1000px){
+    #b{
+        display:none
+    }
+}
+
+.card{
+    background-color: black;
+    width:150px;
+    border-radius: 0.75rem;
+    opacity:0.89;
+    padding:1rem;
+    margin-left:1.5rem
+}
+
+.con{
+    display:flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+
+}
+.card img{
+    width:100%;
+    border-radius: 0.75rem;
+}
+
+.card:hover{
+    background-color: black;
+    width:150px;
+    border-radius: 0.75rem;
+    opacity:1
+}
+.h{
+    margin-top:20px
+}
+
+.card-title{
+    font-weight:600;
+
+}
+
+.card-info{
+    font-size:0.85rem;
+    opacity:0.5;
+}
+
+.fotter{
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width:90%;
+    height:50%;
+    border-top: 1px solid white;
+    opacity: 0.55;
+}
+
+.albums{
+    height:100%;
+    width:25%;
+    /* margin-bottom: 30px; */
+    padding:20px 20px 20px 20px;
+    font-size: 10px;
+    opacity: 0.96;
+}
+
+.albums img{
+    height:50%;
+    width:10%
+}
+
+.z{
+    display:inline-block
+}
+#read{
+    margin-left:60px
+}
+
+.player{
+    height:80%;
+    width:50%;
+    /* border:2px solid yellow; */
+    
+}
+
+.player-control-icon{
+    height:1rem;
+    margin-right: 2rem;
+    opacity: 0.55;
+}
+
+.control{
+    height:100%;
+    width:25%
+}
+
+.player-control{
+    display: flex;
+    justify-content:center;
+    
+
+}
+.player-control-icon:hover{
+    display: flex;
+    justify-content:center;
+    opacity:1
+
+}
+
+.playback-bar{
+    display: flex;
+    justify-content:center;
+}
+.progress-bar{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor:pointer
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.55rem
+
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance:none;
+    height:16px;
+    width:16px;
+    background-color: #1bd760;
+    border-radius: 100%;
+    margin-top: -5px;
+
+}
+
+
+
